@@ -18,9 +18,14 @@ p{
 h2
 {
     padding: 2% 3%;
+
+}
+h2,h3,h4{
+    font-family: freight-display-pro, serif;
+    font-weight: 500;
     padding-top: 10%;
 }
-h1,h2,h3,h4{
+h1{
     font-family: freight-display-pro, serif;
     font-weight: 500;
 }
