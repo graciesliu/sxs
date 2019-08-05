@@ -94,7 +94,19 @@ BG*/
     filter: blur(0px);
 }
 .pg1 .bg-img {
-    background-image: url(bg1.png);
+    background-image: url(img/bg1.png);
+}
+.pg2 .bg-img {
+    background-image: url(img/bg2.jpg);
+}
+.pg3 .bg-img {
+    background-image: url(img/bg3.jpg);
+}
+.pg4 .bg-img {
+    background-image: url(img/bg4.jpg);
+}
+.pg5 .bg-img {
+    background-image: url(img/bg5.jpg);
 }
 
 /*
