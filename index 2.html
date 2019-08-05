@@ -21,7 +21,7 @@
     <script>
         $(document).ready(function() {
 
-            
+
             // Generic function to set blur radius of $ele
             var setBlur = function(ele, radius) {
                     console.log("setblur");
@@ -57,18 +57,22 @@
                 console.log('hovering');
                 window.setTimeout(function() {
                     tweenBlur('.bg-img', 0, 10);
-                    $('.bg-img').animate({opacity:.8},400,"swing");
+                    $('.bg-img').animate({
+                        opacity: .8
+                    }, 400, "swing");
                 }, 200);
                 window.setTimeout(function() {
                     tweenBlur('.snap-content', 10, 0);
-                    $('.snap-content').animate({transform:"scale("+1.2+")"},400,"swing");
+                    //                    $('.snap-content').animate({transform:"scale("+1.2+")"},400,"swing");
                 }, 200);
             });
             $(".snap-content").mouseleave(function() {
                 console.log('hovering');
                 window.setTimeout(function() {
                     tweenBlur('.bg-img', 10, 0);
-                    $('.bg-img').animate({opacity:1},400,"swing");
+                    $('.bg-img').animate({
+                        opacity: 1
+                    }, 400, "swing");
                 }, 200);
                 window.setTimeout(function() {
                     tweenBlur('.snap-content', 0, 10);
@@ -83,7 +87,6 @@
             //                }, 400, "swing");
 
         });
-
     </script>
 </head>
 
@@ -109,7 +112,7 @@
         <div class="snap-content-wrapper">
             <div class="snap-content">
                 <h1 class="h1-center">Each person who experiences illness has a narrative they share with their doctors, family and friends, and their local community.</h1>
-                <div class="bp bp-center">Sight x Site explores how these narratives are constructed and communicated in St. Louis, a city where healthcare and lifespan are profoundly influenced by factors such as race, income, and zip code.</div>
+                <div class="bp bp-center">Sight × Site explores how these narratives are constructed and communicated in St. Louis, a city where healthcare and lifespan are profoundly influenced by factors such as race, income, and zip code.</div>
             </div>
         </div>
     </div>
@@ -134,6 +137,7 @@
             <div class="snap-content">
 
                 <h1 class="h1-left">Art and Medicine</h1>
+                <div class="bp bp-left">The effective practice of medicine requires narrative competence, that is, the ability to acknowledge, absorb, interpret, and act on the stories and plights of others. Medicine practiced with narrative competence, called narrative medicine, is proposed as a model for humane and effective medical practice. </div>
             </div>
         </div>
 
@@ -145,6 +149,7 @@
             <div class="snap-content">
 
                 <h1 class="h1-left">What We’ve Done</h1>
+                <div class="bp bp-left">Our installation focuses on stories of individuals who have experienced vision loss or blindness. We chose vision loss for its potential to engage visitors both viscerally (blindness dramatically affects our sensory experience) and emotionally (more people fear blindness than fear cancer). We leverage vision loss as a point of entry into larger questions: How does illness change the way we “see” ourselves and others? How does our environment shape our health and our bodies?</div>
             </div>
         </div>
 
@@ -154,7 +159,11 @@
         <div class="snap-content-wrapper">
             <div class="snap-content">
 
-                <h1>Sight × Site</h1>
+                <h1 class="h1-center">Sight × Site</h1>
+                <div class="bp bp-center">Through an interactive installation housed at Barnes Jewish Hospital, we aim to highlight illness narratives we collected from individuals in our community, and to create a platform where visitors can share personal stories of their own, creating a dialogue among St. Louisans from all walks of life.
+                </div>
+                
+                <button type="button" class="btn btn-outline-light btn-lg">View Project</button>
             </div>
         </div>
 
@@ -368,7 +377,6 @@
             //methods
             $.fn.fullpage.setAllowScrolling(false);
         });
-
     </script>
 
 </body>

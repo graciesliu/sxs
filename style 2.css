@@ -19,9 +19,11 @@ body {
     font-weight: 400;
     font-style: normal;
     color: #222;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
     font-size: 12px;
+    cursor: url('img/mouse.svg'), auto;
 }
 .snap-page {
     position: relative;
@@ -62,6 +64,7 @@ h1,
 .bp {
     font-family: freight-sans-pro, sans-serif;
     font-size: calc(1rem + .2vw);
+    margin-top: 4rem;
 }
 .bp-center,
 .h1-center {
@@ -71,7 +74,14 @@ h1,
 .bp-left,
 .h1-left {
     text-align: left;
-    /*        width: 30%;*/
+    width: 50%;    
+    float: left;
+}
+.bp-left{
+        margin-top: 2rem;
+}
+.pg1 .bp{
+    margin-top: 0;
 }
 
 /*
@@ -147,6 +157,12 @@ NAVIGATION*/
 .staticNav{
     height: 55vh;
     margin-top: 40px;
+}
+button{
+    font-family: "work sans", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .12rem;
+    margin-top: 50px;
 }
 
 /*
