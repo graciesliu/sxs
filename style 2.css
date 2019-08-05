@@ -132,6 +132,19 @@ NAVIGATION*/
     color: white;
     opacity: 1;
 }
+.staticNav{
+    height: 55vh;
+    margin-top: 40px;
+}
+
+/*
+
+
+
+
+
+OLD STUFF*/
+
 p {
     font-size: 1.2rem;
     padding: 2% 3%;
