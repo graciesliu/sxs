@@ -10,21 +10,7 @@
 
 
     <link rel="stylesheet" type="text/css" href="fullpage.css" />
-    <!--	<link rel="stylesheet" type="text/css" href="examples.css" />-->
     <style>
-        /*
-	 Style for our header texts
-	* --------------------------------------- 
-	h1{
-		font-size: 5em;
-		font-family: arial,helvetica;
-		color: #fff;
-		margin:0;
-	}
-	.intro p{
-		color: #fff;
-	}
-*/
         /* Centered texts in each section
 	* --------------------------------------- */
         
@@ -41,12 +27,6 @@
         .controlArrow.next {
             right: 50px;
         }
-        /* Bottom menu
-	* --------------------------------------- */
-        
-        #infoMenu li a {
-            color: #fff;
-        }
 
     </style>
 
@@ -56,16 +36,16 @@
 		</script>
 	<![endif]-->
 
-    
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    
+
     <link rel="stylesheet" href="https://use.typekit.net/oho6wqg.css">
     <link href="styles2.css" rel="stylesheet">
-    
+
     <script>
         $(document).ready(function() {
 
@@ -192,6 +172,27 @@
             </div>
 
         </div>
+        <div class="section snap-page pg4" id="section3">
+            <div class="bg-img"></div>
+            <div class="snap-content-wrapper">
+                <div class="snap-content">
+                    <h1 class="h1-left">What We’ve Done</h1>
+                    <div class="bp bp-left">Our installation focuses on stories of individuals who have experienced vision loss or blindness. We chose vision loss for its potential to engage visitors both viscerally (blindness dramatically affects our sensory experience) and emotionally (more people fear blindness than fear cancer). We leverage vision loss as a point of entry into larger questions: How does illness change the way we “see” ourselves and others? How does our environment shape our health and our bodies?</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section snap-page pg5" id="section4">
+            <div class="bg-img"></div>
+        <div class="snap-content-wrapper">
+            <div class="snap-content">
+                <h1 class="h1-center">Sight × Site</h1>
+                <div class="bp bp-center">Through an interactive installation housed at Barnes Jewish Hospital, we aim to highlight illness narratives we collected from individuals in our community, and to create a platform where visitors can share personal stories of their own, creating a dialogue among St. Louisans from all walks of life.
+                </div>
+                <button type="button" class="btn btn-outline-light btn-lg">View Project</button>
+            </div>
+        </div>
+        </div>
     </div>
 
     <script type="text/javascript" src="fullpage.js"></script>
@@ -199,11 +200,11 @@
 
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
-            anchors: ['firstPage', 'secondPage', '3rdPage',"4thPage"],
+            anchors: ['firstPage', 'secondPage', '3rdPage', "4thPage"],
             //        sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
             navigation: true,
             navigationPosition: 'left',
-            navigationTooltips: ['First page', 'Second page', ''],
+            navigationTooltips: ['Introduction', 'Who we are', 'Art & Medicine', 'What we have done', 'View Project'],
 
             scrollingSpeed: 1000
         });
