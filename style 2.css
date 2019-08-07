@@ -19,9 +19,6 @@ body {
     font-weight: 400;
     font-style: normal;
     color: #222;
-    scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y mandatory;
     font-size: 12px;
     cursor: url('img/mouse.svg'), auto;
 }
@@ -32,7 +29,6 @@ body {
     background-color: lightgray;
     border-bottom: 1px solid white;
     padding: 1rem;
-    scroll-snap-align: start;
     text-align: center;
     overflow: hidden;
 }
