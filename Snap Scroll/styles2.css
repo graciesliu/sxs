@@ -25,7 +25,7 @@ body {
     -webkit-scroll-snap-type: mandatory;
     -webkit-scroll-snap-points-y: repeat(100%);
     font-size: 12px;
-    cursor: url('img/mouse.svg'), auto;
+    /*    cursor: url('img/mouse.svg'), auto;*/
 }
 .snap-page {
     position: relative;
@@ -77,13 +77,13 @@ h1,
 .bp-left,
 .h1-left {
     text-align: left;
-    width: 50%;    
+    width: 50%;
     float: left;
 }
-.bp-left{
-        margin-top: 2rem;
+.bp-left {
+    margin-top: 2rem;
 }
-.pg1 .bp{
+.pg1 .bp {
     margin-top: 0;
 }
 
@@ -93,15 +93,16 @@ h1,
 
 
 BG*/
-.snap-page{
+
+.snap-page {
     padding: 0;
 }
-.bg-img{
+.bg-img {
     position: absolute;
     height: 100%;
     width: 100%;
     margin: 0;
-        background-position: center;
+    background-position: center;
     background-size: cover;
     padding: 0;
     filter: blur(0px);
@@ -143,7 +144,7 @@ NAVIGATION*/
     font-size: 1rem;
     letter-spacing: .12rem;
 }
-.whole-nav:hover{
+.whole-nav:hover {
     color: black;
 }
 .top-nav-link {
@@ -157,11 +158,20 @@ NAVIGATION*/
     color: white;
     opacity: 1;
 }
-.staticNav{
+.staticNav {
     height: 55vh;
     margin-top: 40px;
+    display: none;
 }
-button{
+.navLine {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 54.5vh;
+    transform: scale(2,1);
+/*    background: aqua;*/
+}
+button {
     font-family: "work sans", sans-serif;
     text-transform: uppercase;
     letter-spacing: .12rem;

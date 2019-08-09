@@ -1048,6 +1048,10 @@
 
             var divUl = document.createElement('ul');
             navigation.appendChild(divUl);
+            var navLine = document.createElement('img');
+            navLine.setAttribute('src','img/navLine.svg');
+            navLine.setAttribute('class','navLine');
+            navigation.appendChild(navLine);
 
             appendTo(navigation, $body);
             var nav = $(SECTION_NAV_SEL)[0];
