@@ -27,7 +27,6 @@
         .controlArrow.next {
             right: 50px;
         }
-
     </style>
 
     <!--[if IE]>
@@ -63,40 +62,46 @@
             <div class="intro">
                 <div class="bg-img"></div>
                 <div class="snap-content-wrapper">
-                    <div class="snap-content snap-content-center">
-                        <h1 class="h1-center">Each person who experiences illness has a narrative they share with their doctors, family and friends, and their local community.</h1>
-                        <div class="bp bp-center">Sight × Site explores how these narratives are constructed and communicated in St. Louis, a city where healthcare and lifespan are profoundly influenced by factors such as race, income, and zip code.</div>
+                    <div class="snap-content">
+                        <h1 class="h1-left">Our objectives:</h1>
+                        <div class="bp bp-left">
+                            <ol>
+                                <li>To enable the act of storytelling for patients as part of healing </li>
+                                <li>To bridge the gap in understanding between patient realities and public assumptions</li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="section snap-page pg2" id="section1">
-            <div class="slide" id="slide1">
-                <div class="intro">
-                    <div class="bg-img"></div>
-                    <div class="snap-content-wrapper">
-                        <div class="snap-content">
-                            <h1 class="h1-left">Sight × Site</h1>
-                            <div class="bp bp-left">
-                                Through an interactive installation housed at Barnes Jewish Hospital, we aim to highlight illness narratives we collected from individuals in our community, and to create a platform where visitors can share personal stories of their own, creating a dialogue among St. Louisans from all walks of life.
-                            </div>
+            <div class="intro">
+                <div class="bg-img"></div>
+                <div class="snap-content-wrapper">
+                    <div class="snap-content">
+                        <h1 class="h1-left">2 types of events</h1>
+                        <div class="bp bp-left">
+                            <p>In the hospital, the clinic-facing events will “gather or incite diverse, genuine responses of vision loss experience. (whether through speculative questions or the interactivity of the devices given.)”</p>
+                            <p>In public areas outside of the hospital, the public-facing events will “activate empathy into artistic reinterpretation.”</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="slide" id="slide2">
-                <h1>Slide 2</h1>
-            </div>
-
         </div>
         <div class="section snap-page pg3" id="section2">
             <div class="bg-img"></div>
             <div class="snap-content-wrapper">
                 <div class="snap-content">
-
-                    <h1 class="h1-left">Art and Medicine</h1>
-                    <div class="bp bp-left">The effective practice of medicine requires narrative competence, that is, the ability to acknowledge, absorb, interpret, and act on the stories and plights of others. Medicine practiced with narrative competence, called narrative medicine, is proposed as a model for humane and effective medical practice. </div>
+                    <h1 class="h1-left">Frameworks and methodologies</h1>
+                    <div class="bp bp-left">
+                        <ul>
+                            <li>Conditional Design: How do we facilitate a discussion that we do not need to be a part of? What are the factors that we control? What are the factors we leave up to randomness and participatory interaction? What are the outcomes/takeaways that we hope to achieve?
+                            </li>
+                            <li>Narrative Medicine: Narrative competencies between physicians and patients lie at the crux of healing and medical care.</li>
+                            <li>Socially Engaged Practice: What are our choice methods of materializing emotional experience to create a base for common understanding? What is art in this context? What are the various ways we might document/record the event in a way that respects the communities that we draw these stories from?
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -105,8 +110,17 @@
             <div class="bg-img"></div>
             <div class="snap-content-wrapper">
                 <div class="snap-content">
-                    <h1 class="h1-left">What We’ve Done</h1>
-                    <div class="bp bp-left">Our installation focuses on stories of individuals who have experienced vision loss or blindness. We chose vision loss for its potential to engage visitors both viscerally (blindness dramatically affects our sensory experience) and emotionally (more people fear blindness than fear cancer). We leverage vision loss as a point of entry into larger questions: How does illness change the way we “see” ourselves and others? How does our environment shape our health and our bodies?</div>
+                    <h1 class="h1-left">Current Concept</h1>
+                    <div class="bp bp-left">
+                        <ul>
+                            <li>
+                                Create a series of workshops that engage patients in conversation over activities of creative making
+                            </li>
+                            <li>
+                                Curate the artifacts made in these workshops into a public-facing exhibition, paired with the audio narratives we’ve already made
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -129,23 +143,23 @@
 
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
-            anchors: ['Introduction', 'About', 'NarrMed', "Work",'Project'],
+            anchors: ['objectives', 'About', 'NarrMed', "Work", 'Project'],
             //        sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
             navigation: true,
             navigationPosition: 'left',
-            navigationTooltips: ['Introduction', 'Who we are', 'Art & Medicine', 'What we have done', 'View Project'],
+            navigationTooltips: ['Objectives', 'Event Types', 'Frameworks & Methodologies', 'Current Concept', 'View Process'],
 
             scrollingSpeed: 1000,
 
             onLeave: function(origin, destination, direction) {
-//                console.log("leaving")
-//                $('.active .bg-img').css({
-//                    opacity: 1,
-//                    filter: "blur(" + 10 + ")"
-//                });
-//                $('.active .snap-content').css({
-//                    filter: "blur(" + 0 + ")"
-//                });
+                //                console.log("leaving")
+                //                $('.active .bg-img').css({
+                //                    opacity: 1,
+                //                    filter: "blur(" + 10 + ")"
+                //                });
+                //                $('.active .snap-content').css({
+                //                    filter: "blur(" + 0 + ")"
+                //                });
             },
 
 
@@ -205,7 +219,6 @@
                 //                }
             },
         });
-
     </script>
 
 </body>

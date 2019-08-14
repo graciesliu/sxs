@@ -3,12 +3,10 @@
     box-sizing: border-box;
 }
 
+
+
+
 /* 
-
-
-
-
-
 POSITIONING, FONT */
 
 html,
@@ -19,11 +17,6 @@ body {
     font-weight: 400;
     font-style: normal;
     color: #222;
-    scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y mandatory;
-    -webkit-scroll-snap-type: mandatory;
-    -webkit-scroll-snap-points-y: repeat(100%);
     font-size: 12px;
     /*    cursor: url('img/mouse.svg'), auto;*/
 }
@@ -34,40 +27,42 @@ body {
     background-color: lightgray;
     border-bottom: 1px solid white;
     padding: 1rem;
-    scroll-snap-align: start;
     text-align: center;
     overflow: hidden;
-    -webkit-scroll-snap-coordinate: 0% 0%;
 }
 .snap-content-wrapper {
     position: relative;
-    left: 25vw;
+    left: 20px;
     height: 100vh;
-    width: 100vw;
+    width: 80vw;
     margin: 0 auto;
 }
 .snap-content {
-    position: absolute;
-    height: 50vh;
-    width: 50vw;
-    top: 40vh;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+/*    align-items: center;*/
+    justify-content: center;
+    height: 100vh;
+    width: 80vw;
     filter: blur(10px);
+}
+h1{
+    width: 100%;
 }
 h1,
 .bp {
-    position: relative;
-    transform: translateY(-50%);
+/*    position: relative;*/
+    /*    transform: translateY(-50%);*/
     text-align: center;
     color: black;
-    left: 0;
+/*    left: 0;*/
     font-size: calc(1rem + 2vw);
-    margin-left: auto;
+    /*    margin-left: auto;*/
 }
 .bp {
     font-family: freight-sans-pro, sans-serif;
     font-size: calc(1rem + .2vw);
-    margin-top: 4rem;
+    /*    margin-top: 4rem;*/
 }
 .bp-center,
 .h1-center {
@@ -77,11 +72,9 @@ h1,
 .bp-left,
 .h1-left {
     text-align: left;
-    width: 50%;
-    float: left;
 }
 .bp-left {
-    margin-top: 2rem;
+    /*    margin-top: 2rem;*/
 }
 .pg1 .bp {
     margin-top: 0;
@@ -147,6 +140,10 @@ NAVIGATION*/
 .whole-nav:hover {
     color: black;
 }
+.top-nav-inverse a {
+    color: black;
+    filter: invert(100%);
+}
 .top-nav-link {
     margin-bottom: 1rem;
 }
@@ -168,8 +165,8 @@ NAVIGATION*/
     top: 0;
     left: 50%;
     height: 54.5vh;
-    transform: scale(2.5,1);
-/*    background: aqua;*/
+    transform: scale(2.5, 1);
+    /*    background: aqua;*/
 }
 button {
     font-family: "work sans", sans-serif;
@@ -184,8 +181,25 @@ button {
 
 
 
-OLD STUFF*/
 
+/*OLD STUFF*/
+
+.fun {
+    height: 20vh;
+    margin: 0;
+    margin-bottom: 0;
+    text-align: left;
+    font-family: 'freight display', serif;
+    padding-left: 20%;
+    font-size: 5rem;
+    text-transform: capitalize;
+    background: white;
+    letter-spacing: normal;
+    -webkit-appearance: none;
+}
+.emoji {
+    margin: 0;
+}
 p {
     font-size: 1.2rem;
     padding: 2% 3%;
@@ -291,7 +305,7 @@ h1 {
 }
 .fun {
     width: 100%;
-    margin-bottom: 2rem;
+    /*    margin-bottom: 2rem;*/
 }
 .gif {
     max-width: 100%;
@@ -448,20 +462,43 @@ figure {
 [class*="col-"] {
     padding: 1rem;
 }
-
 /*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+Extra small (xs) devices (portrait phones,
+less than 576px) No media query since this is the default in Bootstrap Small (sm) devices (landscape phones,
+*/
+/*
+576px and up) @media (min-width: 576px) {
+    ...
+}
+*/
+/*
+Medium (md) devices (tablets,
+768px and up) 
+*/
+@media (min-width: 768px) {
+    .snap-content {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        width: 45vw;
+        flex-direction: row;
+    }
+    .snap-content-center {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .snap-content-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+}
+/*
+Large (lg) devices (desktops,
+992px and up) @media (min-width: 992px) {
+    ...
+}
+Extra (xl) large devices (large desktops,
+1200px and up) @media (min-width: 1200px) {
+    ...
+}
 */
