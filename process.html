@@ -27,7 +27,6 @@
         .controlArrow.next {
             right: 50px;
         }
-
     </style>
 
     <!--[if IE]>
@@ -48,7 +47,7 @@
 
 </head>
 
-<body>
+<body class="process-body">
     <div class="whole-nav">
         <div class="top-nav top-nav-inverse">
 
@@ -56,7 +55,7 @@
             <div class="top-nav-link"><a href="project.html">Project</a></div>
             <div class="top-nav-link current-nav-pg"><a href="process.html">Process</a></div>
         </div>
-        
+
         <img class="about about-invert" src="img/logo.svg">
 
     </div>
@@ -66,51 +65,104 @@
 
         <button class="fun" data-toggle="collapse" data-target="#emoji">Identifying the Brief</button>
         <div id="emoji" class="collapse">
-            <div class="container-fluid padding collapse-ctnr">
+            <div class="container-fluid collapse-ctnr sec1">
+<!--                <div class="collapse-bg sec1"></div>-->
 
             </div>
         </div>
         <button class="fun" data-toggle="collapse" data-target="#emoji22">Research & Insights</button>
         <div id="emoji22" class="collapse">
-            <div class="container-fluid padding collapse-ctnr">
-
+            <div class="container-fluid collapse-ctnr sec2">
+<!--                <div class="collapse-bg sec2"></div>-->
             </div>
         </div>
 
-        <button class="fun" data-toggle="collapse" data-target="#emoji2">Development Timeline</button>
+        <button class="fun" data-toggle="collapse" data-target="#emoji2">Conceptual Development</button>
         <div id="emoji2" class="collapse">
-            <div class="container-fluid padding collapse-ctnr">
-
+            <div class="container-fluid collapse-ctnr sec3">
+<!--                <div class="collapse-bg sec3"></div>-->
             </div>
         </div>
 
-        <button class="fun" data-toggle="collapse" data-target="#emoji3">Final Concept</button>
+        <button class="fun" data-toggle="collapse" data-target="#emoji3">Prototypes & Output</button>
         <div id="emoji3" class="collapse">
-            <div class="container-fluid padding collapse-ctnr">
-
+            <div class="container-fluid collapse-ctnr sec4">
+                <div class="collapse-bg sec4"></div>
             </div>
         </div>
 
         <button class="fun" data-toggle="collapse" data-target="#emoji4">Project Futures</button>
         <div id="emoji4" class="collapse">
-            <div class="container-fluid padding collapse-ctnr">
-
+            <div class="container-fluid collapse-ctnr sec5">
+<!--                <div class="collapse-bg sec5"></div>-->
             </div>
         </div>
 
     </div>
-    
-    
+
     <div class="about-pg">
-        
+        <div class="about-content-wrapper">
+            <div class="about-content">
+
+                <div class="row">
+                    <h1 id="about-title">Sight × Site</h1>
+                </div>
+
+                <div class="about-section">
+                    <h2>About</h2>
+                    <p> We are a team of art, design, architecture, and engineering students in collaboration with WashU Medical School’s Barnes-Jewish Hospital Ophthalmology Clinic to develop and produce multi-sensory sited experiences that aim to engage people empathically with stories from the visually impaired community, exploring the intersection of health and design through narrative medicine.
+                    </p>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="about-item">
+                        <h2>Team</h2>
+                        <p>
+                            <ul>
+                                <li>Gracie Liu <span> - Creative Director</span></li>
+                                <li>Craig Pearson, PhD <span> - Project Lead</span></li>
+                                <li>Claire Wiley <span> - Project Coodinator</span></li>
+                                <li>Rachel Roberts <span> - Community Coordinator</span></li>
+                                <li>Grace Kang <span> - Concept Lead</span></li>
+                                <li>Corinna Siu <span> - Architect</span></li>
+                                <li>Brandon Wilburn <span> - Brand Designer</span></li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div class="about-item">
+                        <h2>Special Thanks To Our Mentors and Sponsors</h2>
+                        <p>
+                            <ul>
+                                <li>Rajendra Apte, MD, PhD <span>- Paul A. Cibis Distinguished Professor of Ophthalmology & Visual Sciences</span> </li>
+                                <li>Dave Cooperstein <span>- Senior Creative Designer at PGAV Destinations</span></li>
+                                <li>Patricia Olynyk <span>- Director of the Graduate School of Art</span>
+                                </li>
+                                <li>Robert Morgan <span>- Professor of Drama and Director of the Beyond Boundaries Program</span>
+                                </li>
+                                <li>Sean Savoie <span>- Senior Lecturer of Design-Technical Theater</span>
+                                </li>
+                                <li>Elizabeth Kramer <span>- Associate Director of the Office for Socially Engaged Practice</span>
+                                </li>
+                                <li>Washington University in St. Louis</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
-    
-    
+
+
     <script type="text/javascript" src="page-load.js">
     </script>
     <script type="text/javascript" src="fullpage.js"></script>
     <script type="text/javascript" src="examples.js"></script>
 
+    <!--     blur-->
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
             anchors: ['Introduction', 'About', 'NarrMed', "Work", 'Project'],
@@ -189,7 +241,6 @@
                 //                }
             },
         });
-
     </script>
 
 </body>
