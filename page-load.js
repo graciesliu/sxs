@@ -9,6 +9,7 @@
          $(".about-pg").fadeToggle(1000, 'swing');
          console.log('clicked');
          $('.about-invert').toggleClass('invertIcon');
+         $('#fp-nav,.top-nav,#fullpage').fadeToggle(1000);
      });
      
 //     

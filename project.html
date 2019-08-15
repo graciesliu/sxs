@@ -142,7 +142,7 @@
 
 
     <div class="about-pg">
-
+        <h1>About</h1>
     </div>
 
     <script type="text/javascript" src="page-load.js">
@@ -160,7 +160,7 @@
             navigationPosition: 'left',
             navigationTooltips: ['Objectives', 'Event Types', 'Frameworks & Methodologies', 'Current Concept', 'View Process'],
 
-            scrollingSpeed: 1000,
+            scrollingSpeed: 1500,
 
             onLeave: function(origin, destination, direction) {
                 //                console.log("leaving")
@@ -194,7 +194,7 @@
                         }).animate({
                             blurRadius: endRadius
                         }, {
-                            duration: 500,
+                            duration: 400,
                             easing: 'swing', // or "linear"
                             // use jQuery UI or Easing plugin for more options
                             step: function() {
@@ -212,11 +212,11 @@
                     tweenBlur('.active .bg-img', 0, 10);
                     $('.active .bg-img').animate({
                         opacity: .6
-                    }, 400, "swing");
-                }, 400);
+                    }, 500, "swing");
+                });
                 window.setTimeout(function() {
                     tweenBlur('.active .snap-content', 10, 0);
-                }, 200);
+                });
 
 
 
