@@ -27,6 +27,7 @@
         .controlArrow.next {
             right: 50px;
         }
+
     </style>
 
     <!--[if IE]>
@@ -48,17 +49,18 @@
 </head>
 
 <body>
-    <div class="whole-nav">
+    <div class="whole-nav" id="whole-nav">
         <div class="top-nav">
             <div class="top-nav-link"><a href="index.html">Introduction</a></div>
-            <div class="top-nav-link"><a href="project.html">Project</a></div>
+            <div class="top-nav-link current-nav-pg"><a href="project.html">Project</a></div>
             <div class="top-nav-link"><a href="process.html">Process</a></div>
-            <div class="top-nav-link"><a href="about.html">About</a></div>
         </div>
     </div>
+    <img class="about" src="img/icon-white.svg">
+
 
     <div id="fullpage">
-        <div class="section snap-page pg1" id="section0">
+        <div class="section snap-page project-pg1" id="section0">
             <div class="intro">
                 <div class="bg-img"></div>
                 <div class="snap-content-wrapper">
@@ -74,7 +76,7 @@
                 </div>
             </div>
         </div>
-        <div class="section snap-page pg2" id="section1">
+        <div class="section snap-page project-pg2" id="section1">
             <div class="intro">
                 <div class="bg-img"></div>
                 <div class="snap-content-wrapper">
@@ -88,7 +90,7 @@
                 </div>
             </div>
         </div>
-        <div class="section snap-page pg3" id="section2">
+        <div class="section snap-page project-pg3" id="section2">
             <div class="bg-img"></div>
             <div class="snap-content-wrapper">
                 <div class="snap-content">
@@ -106,7 +108,7 @@
             </div>
 
         </div>
-        <div class="section snap-page pg4" id="section3">
+        <div class="section snap-page project-pg4" id="section3">
             <div class="bg-img"></div>
             <div class="snap-content-wrapper">
                 <div class="snap-content">
@@ -125,18 +127,27 @@
             </div>
         </div>
 
-        <div class="section snap-page pg5" id="section4">
+        <div class="section snap-page project-pg5" id="section4">
             <div class="bg-img"></div>
             <div class="snap-content-wrapper">
                 <div class="snap-content snap-content-center">
                     <h1 class="h1-center">Sight × Site</h1>
                     <div class="bp bp-center">Through an interactive installation housed at Barnes Jewish Hospital, we aim to highlight illness narratives we collected from individuals in our community, and to create a platform where visitors can share personal stories of their own, creating a dialogue among St. Louisans from all walks of life.
                     </div>
-                    <button type="button" class="btn btn-outline-light btn-lg">View Project</button>
+                    <button type="button" class="btn btn-outline-light btn-lg">View Process</button>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <div class="about-pg">
+
+    </div>
+
+    <script type="text/javascript" src="page-load.js">
+    </script>
+
 
     <script type="text/javascript" src="fullpage.js"></script>
     <script type="text/javascript" src="examples.js"></script>
@@ -219,6 +230,7 @@
                 //                }
             },
         });
+
     </script>
 
 </body>

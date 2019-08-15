@@ -3,16 +3,14 @@
     box-sizing: border-box;
 }
 
-
-
-
 /* 
 POSITIONING, FONT */
 
 html,
 body {
-    height: 100%;
-    width: 100%;
+    display: none;
+    height: 100vh;
+    width: 100vw;
     font-family: freight-sans-pro, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -40,22 +38,22 @@ body {
 .snap-content {
     display: flex;
     flex-direction: column;
-/*    align-items: center;*/
+    /*    align-items: center;*/
     justify-content: center;
     height: 100vh;
     width: 80vw;
     filter: blur(10px);
 }
-h1{
+h1 {
     width: 100%;
 }
 h1,
 .bp {
-/*    position: relative;*/
+    /*    position: relative;*/
     /*    transform: translateY(-50%);*/
     text-align: center;
     color: black;
-/*    left: 0;*/
+    /*    left: 0;*/
     font-size: calc(1rem + 2vw);
     /*    margin-left: auto;*/
 }
@@ -78,6 +76,11 @@ h1,
 }
 .pg1 .bp {
     margin-top: 0;
+}
+.bp ul li{
+    list-style: none;
+    list-style-position: outside;
+    margin: 1rem;
 }
 
 /*
@@ -116,6 +119,22 @@ BG*/
     background-image: url(img/bg5.jpg);
 }
 
+.project-pg1 .bg-img {
+    background-image: url(img/bg6.jpg);
+}
+.project-pg2 .bg-img {
+    background-image: url(img/bg7.jpg);
+}
+.project-pg3 .bg-img {
+    background-image: url(img/bg8.jpg);
+}
+.project-pg4 .bg-img {
+    background-image: url(img/bg9.jpg);
+}
+.project-pg5 .bg-img {
+    background-image: url(img/bg10.jpg);
+}
+
 /*
 
 
@@ -129,16 +148,21 @@ NAVIGATION*/
     font-family: work-sans, sans-serif;
     font-weight: 400;
     font-style: normal;
-    z-index: 1000;
+    z-index: 100;
     position: fixed;
     text-transform: uppercase;
-    top: 60px;
-    left: 60px;
     font-size: 1rem;
     letter-spacing: .12rem;
+    height: 100vh;
+    width: 20vh;
 }
 .whole-nav:hover {
     color: black;
+}
+.top-nav {
+    position: absolute;
+    top: 5.5vh;
+    left: 3.5vw;
 }
 .top-nav-inverse a {
     color: black;
@@ -155,16 +179,11 @@ NAVIGATION*/
     color: white;
     opacity: 1;
 }
-.staticNav {
-    height: 55vh;
-    margin-top: 40px;
-    display: none;
-}
 .navLine {
     position: absolute;
     top: 0;
-    left: 50%;
-    height: 54.5vh;
+    left: 49%;
+    height: 100%;
     transform: scale(2.5, 1);
     /*    background: aqua;*/
 }
@@ -173,6 +192,52 @@ button {
     text-transform: uppercase;
     letter-spacing: .12rem;
     margin-top: 50px;
+    border-top: solid 1px black;
+    border-bottom: none;
+}
+button:focus{
+        outline:0;
+}
+.about {
+    position: absolute;
+    bottom: 5.5vh;
+    left: 3.5vw;
+    opacity: .5;
+    z-index: 2000;
+}
+.about:hover{
+    opacity: 1;
+    animation: about-hover 500ms ease;
+}
+.invertIcon{
+   filter: invert(100%);
+}
+@keyframes about-hover{
+    from{transform: rotate(0deg)}
+    to{transform: rotate(180deg)}
+}
+.current-nav-pg a {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/*
+
+
+
+
+
+
+/*ABOUT PAGE*/
+.about-pg{
+ position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 15;
+    background: black;
+    display: none;
 }
 
 /*
@@ -197,8 +262,16 @@ button {
     letter-spacing: normal;
     -webkit-appearance: none;
 }
-.emoji {
-    margin: 0;
+.fun:hover{
+    text-decoration: underline;
+}
+.collapse-ctnr{
+    height: 80vh;
+    background: lightgray;
+    overflow-x: scroll;
+}
+.collapse-ctnr::-webkit-scrollbar{
+    display: none;
 }
 p {
     font-size: 1.2rem;
@@ -462,36 +535,50 @@ figure {
 [class*="col-"] {
     padding: 1rem;
 }
+
 /*
 Extra small (xs) devices (portrait phones,
 less than 576px) No media query since this is the default in Bootstrap Small (sm) devices (landscape phones,
 */
+
+
 /*
 576px and up) @media (min-width: 576px) {
     ...
 }
 */
+
+
 /*
 Medium (md) devices (tablets,
 768px and up) 
 */
+
 @media (min-width: 768px) {
     .snap-content {
         display: flex;
         align-items: center;
         height: 100vh;
-        width: 45vw;
+        width: 60vw;
         flex-direction: row;
     }
     .snap-content-center {
         flex-direction: column;
         justify-content: center;
+        width: 42vw;
     }
-    .snap-content-wrapper{
+    .snap-content-wrapper {
         display: flex;
         justify-content: center;
+    }.bp-left,
+.h1-left {
+    width: 50%;
+}
+    .h1-center{
+        margin-bottom: 2rem;
     }
 }
+
 /*
 Large (lg) devices (desktops,
 992px and up) @media (min-width: 992px) {

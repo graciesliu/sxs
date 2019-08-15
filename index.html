@@ -51,11 +51,12 @@
 <body>
     <div class="whole-nav">
         <div class="top-nav">
-            <div class="top-nav-link"><a href="index.html">Introduction</a></div>
+            <div class="top-nav-link current-nav-pg"><a href="index.html">Introduction</a></div>
             <div class="top-nav-link"><a href="project.html">Project</a></div>
             <div class="top-nav-link"><a href="process.html">Process</a></div>
-            <div class="top-nav-link"><a href="about.html">About</a></div>
         </div>
+        <img class="about" src="img/icon-white.svg">
+
     </div>
 
     <div id="fullpage">
@@ -124,12 +125,16 @@
         </div>
     </div>
 
+    <script type="text/javascript" src="page-load.js">
+
+
+    </script>
     <script type="text/javascript" src="fullpage.js"></script>
     <script type="text/javascript" src="examples.js"></script>
 
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
-            anchors: ['Introduction', 'About', 'NarrMed', "Work",'Project'],
+            anchors: ['Introduction', 'About', 'NarrMed', "Work", 'Project'],
             //        sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
             navigation: true,
             navigationPosition: 'left',
@@ -138,14 +143,14 @@
             scrollingSpeed: 1000,
 
             onLeave: function(origin, destination, direction) {
-//                console.log("leaving")
-//                $('.active .bg-img').css({
-//                    opacity: 1,
-//                    filter: "blur(" + 10 + ")"
-//                });
-//                $('.active .snap-content').css({
-//                    filter: "blur(" + 0 + ")"
-//                });
+                //                console.log("leaving")
+                //                $('.active .bg-img').css({
+                //                    opacity: 1,
+                //                    filter: "blur(" + 10 + ")"
+                //                });
+                //                $('.active .snap-content').css({
+                //                    filter: "blur(" + 0 + ")"
+                //                });
             },
 
 
