@@ -82,6 +82,9 @@ h1,
     list-style-position: outside;
     margin: 1rem;
 }
+.front-pg{
+    width: 
+}
 
 /*
 
@@ -751,7 +754,8 @@ Medium (md) devices (tablets,
         width: 50%;
     }
     .h1-center {
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
+        width: 120%;
     }
     .bp-center{
         width: 80%;
