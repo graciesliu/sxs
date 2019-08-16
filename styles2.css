@@ -198,7 +198,7 @@ NAVIGATION*/
     font-family: work-sans, sans-serif;
     font-weight: 400;
     font-style: normal;
-    z-index: 100;
+    z-index: 9;
     position: fixed;
     text-transform: uppercase;
     font-size: 1rem;
@@ -238,6 +238,9 @@ NAVIGATION*/
     color: white;
     background-color: black;
 }
+#fp-nav{
+    display: none;
+}
 .navLine {
     position: absolute;
     top: 0;
@@ -267,7 +270,7 @@ a.btn{
     margin-top: 50px;
 }
 .about {
-    position: absolute;
+    position: fixed;
     bottom: 5.5vh;
     left: 3.5vw;
     opacity: .5;
@@ -390,7 +393,7 @@ a.btn{
 }
 .carousel-control-prev,
 .carousel-control-next{
-    z-index: 1500;
+    z-index: 10;
 }
 .container-fluid{
     padding: 0;
@@ -403,6 +406,29 @@ a.btn{
     width: 60%;
 /*    background: black;*/
 /*    border: solid black 1px;*/
+}
+.content li{
+    width: 400px;
+    margin-bottom: .5rem;
+}
+.content img{
+    height: auto;
+    width: auto;
+    max-height: 120%;
+}
+.content .img-caption{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    text-align: left;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.content-img{
+    top: 10% !important;
+}
+.content p{
+    width: 70%;
 }
 .prcs-header{
     font-family: 'Work Sans', sans-serif;
@@ -465,10 +491,6 @@ h1 {
 }
 .logo {
     max-width: 250px;
-}
-.carousel-inner img {
-    width: 100%;
-    /*    max-height: 0%;*/
 }
 .carousel-caption {
     position: absolute;
@@ -733,6 +755,9 @@ Medium (md) devices (tablets,
     }
     .bp-center{
         width: 80%;
+    }
+    #fp-nav{
+        display: inline;
     }
 }
 
