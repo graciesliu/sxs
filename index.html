@@ -27,7 +27,6 @@
         .controlArrow.next {
             right: 50px;
         }
-
     </style>
 
     <!--[if IE]>
@@ -152,7 +151,7 @@
                     </div>
 
                     <div class="about-item">
-                        <h2>Special Thanks To Our Mentors and Sponsors</h2>
+                        <h2>Special Thanks To Our Mentors and Supporters</h2>
                         <p>
                             <ul>
                                 <li>Rajendra Apte, MD, PhD <span>- Paul A. Cibis Distinguished Professor of Ophthalmology & Visual Sciences</span> </li>
@@ -186,17 +185,15 @@
             navigationPosition: 'left',
             navigationTooltips: ['Introduction', 'Who we are', 'Art & Medicine', 'What we have done', 'View Project'],
 
-            scrollingSpeed: 2000,
+            scrollingSpeed: 1200,
 
             onLeave: function(origin, destination, direction) {
-                //                console.log("leaving")
-                //                $('.active .bg-img').css({
-                //                    opacity: 1,
-                //                    filter: "blur(" + 10 + ")"
-                //                });
-                //                $('.active .snap-content').css({
-                //                    filter: "blur(" + 0 + ")"
-                //                });
+                $(".bg-img:not(.active .bg-img)").css({"-webkit-filter": "blur(" + 0 + "px)",
+                            "filter": "blur(" + 0 + "px)"});
+                
+                    $(".snap-content:not(.active .snap-content)").css({"-webkit-filter": "blur(" + 10 + "px)",
+                            "filter": "blur(" + 10 + "px)"});
+                $(".bg-img:not(.active .bg-img)").css({opacity:1});
             },
 
 
@@ -220,7 +217,7 @@
                         }).animate({
                             blurRadius: endRadius
                         }, {
-                            duration: 500,
+                            duration: 1000,
                             easing: 'swing', // or "linear"
                             // use jQuery UI or Easing plugin for more options
                             step: function() {
@@ -236,13 +233,16 @@
 
                 window.setTimeout(function() {
                     tweenBlur('.active .bg-img', 0, 10);
+//                    
+                
                     $('.active .bg-img').animate({
                         opacity: .6
-                    }, 400, "swing");
-                }, 400);
+                    }, 1000, "swing");
+                });
                 window.setTimeout(function() {
                     tweenBlur('.active .snap-content', 10, 0);
-                }, 200);
+//                    
+                });
 
 
 

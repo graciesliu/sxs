@@ -271,12 +271,13 @@ a.btn{
     bottom: 5.5vh;
     left: 3.5vw;
     opacity: .5;
-    z-index: 2000;
+    z-index: 3000;
     transition: 300ms;
 }
 .about:hover {
     opacity: 1;
     animation: about-hover 500ms ease;
+    z-index: 3000;
 }
 .invertIcon {
     filter: invert(100%);
@@ -366,7 +367,56 @@ a.btn{
 .about-pg span {
     opacity: .5;
 }
+/*
 
+
+
+
+
+
+/*CAROUSEL*/
+.carousel{
+    height: 100%;
+    width: 100%;
+
+}
+.carousel-inner{
+    height: inherit;
+    width: inherit;
+}
+.carousel-item{
+    height: inherit;
+    width: 100%;
+}
+.carousel-control-prev,
+.carousel-control-next{
+    z-index: 1500;
+}
+.container-fluid{
+    padding: 0;
+}
+.carousel-item .content{
+    position: absolute;
+    left: 20%;
+    height: 60%;
+    top: 20%;
+    width: 60%;
+/*    background: black;*/
+/*    border: solid black 1px;*/
+}
+.prcs-header{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    text-align: left;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: .12rem;
+    margin-bottom: 4rem;
+    line-height: 4rem;
+}
+.prcs-bp{
+    font-size: 2rem;
+}
 /*
 
 
@@ -415,11 +465,6 @@ h1 {
 }
 .logo {
     max-width: 250px;
-}
-#slides,
-.carousel-inner {
-    max-height: 80%;
-    overflow: hidden;
 }
 .carousel-inner img {
     width: 100%;
@@ -685,6 +730,9 @@ Medium (md) devices (tablets,
     }
     .h1-center {
         margin-bottom: 2rem;
+    }
+    .bp-center{
+        width: 80%;
     }
 }
 

@@ -27,7 +27,6 @@
         .controlArrow.next {
             right: 50px;
         }
-
     </style>
 
     <!--[if IE]>
@@ -65,12 +64,12 @@
                 <div class="bg-img"></div>
                 <div class="snap-content-wrapper">
                     <div class="snap-content">
-                        <h1 class="h1-left">Our objectives:</h1>
+                        <h1 class="h1-left">Our objectives</h1>
                         <div class="bp bp-left">
-                            <ol>
-                                <li>To enable the act of storytelling for patients as part of healing </li>
-                                <li>To bridge the gap in understanding between patient realities and public assumptions</li>
-                            </ol>
+                            <p>
+                                To enable the act of storytelling for patients as part of healing
+                            </p>
+                            <p>To bridge the gap in understanding between patient realities and public assumptions</p>
                         </div>
                     </div>
                 </div>
@@ -96,13 +95,10 @@
                 <div class="snap-content">
                     <h1 class="h1-left">Frameworks and methodologies</h1>
                     <div class="bp bp-left">
-                        <ul>
-                            <li>Conditional Design: How do we facilitate a discussion that we do not need to be a part of? What are the factors that we control? What are the factors we leave up to randomness and participatory interaction? What are the outcomes/takeaways that we hope to achieve?
-                            </li>
-                            <li>Narrative Medicine: Narrative competencies between physicians and patients lie at the crux of healing and medical care.</li>
-                            <li>Socially Engaged Practice: What are our choice methods of materializing emotional experience to create a base for common understanding? What is art in this context? What are the various ways we might document/record the event in a way that respects the communities that we draw these stories from?
-                            </li>
-                        </ul>
+                        <p>Conditional Design: How do we facilitate a discussion that we do not need to be a part of? What are the factors that we control? What are the factors we leave up to randomness and participatory interaction? What are the outcomes/takeaways that we hope to achieve?</p>
+                        <p>Narrative Medicine: Narrative competencies between physicians and patients lie at the crux of healing and medical care.</p>
+                        <p>Socially Engaged Practice: What are our choice methods of materializing emotional experience to create a base for common understanding? What is art in this context? What are the various ways we might document/record the event in a way that respects the communities that we draw these stories from?
+                        </p>
                     </div>
                 </div>
             </div>
@@ -114,14 +110,12 @@
                 <div class="snap-content">
                     <h1 class="h1-left">Current Concept</h1>
                     <div class="bp bp-left">
-                        <ul>
-                            <li>
-                                Create a series of workshops that engage patients in conversation over activities of creative making
-                            </li>
-                            <li>
-                                Curate the artifacts made in these workshops into a public-facing exhibition, paired with the audio narratives we’ve already made
-                            </li>
-                        </ul>
+                        <p>
+                            Create a series of workshops that engage patients in conversation over activities of creative making
+                        </p>
+                        <p>
+                            Curate the artifacts made in these workshops into a public-facing exhibition, paired with the audio narratives we’ve already made
+                        </p>
                     </div>
                 </div>
             </div>
@@ -131,7 +125,7 @@
             <div class="bg-img"></div>
             <div class="snap-content-wrapper">
                 <div class="snap-content snap-content-center">
-                    <h1 class="h1-center">Sight × Site</h1>
+                    <h1 class="h1-center">Iterative Process</h1>
                     <div class="bp bp-center">Through an interactive installation housed at Barnes Jewish Hospital, we aim to highlight illness narratives we collected from individuals in our community, and to create a platform where visitors can share personal stories of their own, creating a dialogue among St. Louisans from all walks of life.
                     </div>
                     <a href="process.html" class="btn btn-primary btn-lg">View Process</a>
@@ -174,7 +168,7 @@
                     </div>
 
                     <div class="about-item">
-                        <h2>Special Thanks To Our Mentors and Sponsors</h2>
+                        <h2>Special Thanks To Our Mentors and Supporters</h2>
                         <p>
                             <ul>
                                 <li>Rajendra Apte, MD, PhD <span>- Paul A. Cibis Distinguished Professor of Ophthalmology & Visual Sciences</span> </li>
@@ -198,8 +192,6 @@
     </div>
 
     <script type="text/javascript" src="page-load.js">
-
-
     </script>
 
 
@@ -214,17 +206,21 @@
             navigationPosition: 'left',
             navigationTooltips: ['Objectives', 'Event Types', 'Frameworks & Methodologies', 'Current Concept', 'View Process'],
 
-            scrollingSpeed: 1500,
+            scrollingSpeed: 1200,
 
             onLeave: function(origin, destination, direction) {
-                //                console.log("leaving")
-                //                $('.active .bg-img').css({
-                //                    opacity: 1,
-                //                    filter: "blur(" + 10 + ")"
-                //                });
-                //                $('.active .snap-content').css({
-                //                    filter: "blur(" + 0 + ")"
-                //                });
+                $(".bg-img:not(.active .bg-img)").css({
+                    "-webkit-filter": "blur(" + 0 + "px)",
+                    "filter": "blur(" + 0 + "px)"
+                });
+
+                $(".snap-content:not(.active .snap-content)").css({
+                    "-webkit-filter": "blur(" + 10 + "px)",
+                    "filter": "blur(" + 10 + "px)"
+                });
+                $(".bg-img:not(.active .bg-img)").css({
+                    opacity: 1
+                });
             },
 
 
@@ -248,7 +244,7 @@
                         }).animate({
                             blurRadius: endRadius
                         }, {
-                            duration: 400,
+                            duration: 1000,
                             easing: 'swing', // or "linear"
                             // use jQuery UI or Easing plugin for more options
                             step: function() {
@@ -266,7 +262,7 @@
                     tweenBlur('.active .bg-img', 0, 10);
                     $('.active .bg-img').animate({
                         opacity: .6
-                    }, 500, "swing");
+                    }, 1000, "swing");
                 });
                 window.setTimeout(function() {
                     tweenBlur('.active .snap-content', 10, 0);
@@ -284,7 +280,6 @@
                 //                }
             },
         });
-
     </script>
 
 </body>
